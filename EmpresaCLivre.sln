@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Padaria", "Padaria\Padaria.csproj", "{A2A7BDC1-4212-485C-B057-F6E86FC37A27}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculadora", "Calculadora\Calculadora.csproj", "{C4CF5DAC-39E4-4ADD-B09F-24D97B7E9A60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A2A7BDC1-4212-485C-B057-F6E86FC37A27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2A7BDC1-4212-485C-B057-F6E86FC37A27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2A7BDC1-4212-485C-B057-F6E86FC37A27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4CF5DAC-39E4-4ADD-B09F-24D97B7E9A60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4CF5DAC-39E4-4ADD-B09F-24D97B7E9A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4CF5DAC-39E4-4ADD-B09F-24D97B7E9A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4CF5DAC-39E4-4ADD-B09F-24D97B7E9A60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
