@@ -16,5 +16,22 @@ namespace Padaria
         {
             InitializeComponent();
         }
+
+        private void tmrSplash_Tick(object sender, EventArgs e)
+        {
+            if (pgbSplash.Value < 100)
+            {
+                pgbSplash.Value = pgbSplash.Value + 1;
+                lblPorcentagem.Text = pgbSplash.Value.ToString() + "%";
+            }
+            else
+            {
+                frmLogin abrir = new frmLogin();
+                abrir.Show();
+                this.Hide();
+                tmrSplash.Enabled = false;
+            }
+
+        }
     }
 }

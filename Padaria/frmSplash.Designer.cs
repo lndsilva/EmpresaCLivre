@@ -28,55 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSplash));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pctSplash = new System.Windows.Forms.PictureBox();
+            this.lblPorcentagem = new System.Windows.Forms.Label();
+            this.pgbSplash = new System.Windows.Forms.ProgressBar();
+            this.tmrSplash = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.pctSplash)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pctSplash
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(256, 111);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(258, 215);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pctSplash.Image = ((System.Drawing.Image)(resources.GetObject("pctSplash.Image")));
+            this.pctSplash.Location = new System.Drawing.Point(256, 111);
+            this.pctSplash.Name = "pctSplash";
+            this.pctSplash.Size = new System.Drawing.Size(258, 215);
+            this.pctSplash.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctSplash.TabIndex = 0;
+            this.pctSplash.TabStop = false;
             // 
-            // label1
+            // lblPorcentagem
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(369, 350);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "0%";
+            this.lblPorcentagem.AutoSize = true;
+            this.lblPorcentagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPorcentagem.Location = new System.Drawing.Point(369, 350);
+            this.lblPorcentagem.Name = "lblPorcentagem";
+            this.lblPorcentagem.Size = new System.Drawing.Size(32, 20);
+            this.lblPorcentagem.TabIndex = 1;
+            this.lblPorcentagem.Text = "0%";
             // 
-            // progressBar1
+            // pgbSplash
             // 
-            this.progressBar1.Location = new System.Drawing.Point(267, 386);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(237, 25);
-            this.progressBar1.TabIndex = 2;
+            this.pgbSplash.Location = new System.Drawing.Point(267, 386);
+            this.pgbSplash.Name = "pgbSplash";
+            this.pgbSplash.Size = new System.Drawing.Size(237, 25);
+            this.pgbSplash.TabIndex = 2;
+            // 
+            // tmrSplash
+            // 
+            this.tmrSplash.Enabled = true;
+            this.tmrSplash.Tick += new System.EventHandler(this.tmrSplash_Tick);
             // 
             // frmSplash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
-            this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pgbSplash);
+            this.Controls.Add(this.lblPorcentagem);
+            this.Controls.Add(this.pctSplash);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmSplash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Padaria - Splash";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctSplash)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -84,8 +91,9 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.PictureBox pctSplash;
+        private System.Windows.Forms.Label lblPorcentagem;
+        private System.Windows.Forms.ProgressBar pgbSplash;
+        private System.Windows.Forms.Timer tmrSplash;
     }
 }

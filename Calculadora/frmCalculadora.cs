@@ -12,10 +12,12 @@ namespace Calculadora
 {
     public partial class frmCalculadora : Form
     {
+
         public frmCalculadora()
         {
             InitializeComponent();
         }
+
         //essa é uma ação do botão somar
         private void btnSomar_Click(object sender, EventArgs e)
         {
@@ -30,17 +32,22 @@ namespace Calculadora
             resp = num1 + num2;
 
             lblResposta.Text = resp.ToString();
-
-
+            bandeira = true;
 
         }
+        //escopo global
+        bool bandeira;
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
+            bandeira = false;
             txtNum1.Clear();
             txtNum2.Clear();
             lblResposta.Text = "";
             txtNum1.Focus();
         }
+
+       
+
     }
 }
