@@ -8,3 +8,4 @@ C:\Users\laercio.nsilva\Documents\Visual Studio 2022\EmpresaCLivre\Calculadora\b
 C:\Users\laercio.nsilva\Documents\Visual Studio 2022\EmpresaCLivre\Calculadora\bin\Debug\Calculadora.pdb
 C:\Users\laercio.nsilva\Documents\Visual Studio 2022\EmpresaCLivre\Calculadora\obj\Debug\Calculadora.exe
 C:\Users\laercio.nsilva\Documents\Visual Studio 2022\EmpresaCLivre\Calculadora\obj\Debug\Calculadora.pdb
+C:\Users\laercio.nsilva\Documents\Visual Studio 2022\EmpresaCLivre\Calculadora\obj\Debug\Calculadora.frmRepeticao.resources
