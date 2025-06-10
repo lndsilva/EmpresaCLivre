@@ -89,6 +89,7 @@
             this.btnListarCategorias.TabIndex = 5;
             this.btnListarCategorias.Text = "Listar categorias";
             this.btnListarCategorias.UseVisualStyleBackColor = true;
+            this.btnListarCategorias.Click += new System.EventHandler(this.btnListarCategorias_Click);
             // 
             // frmRepeticao
             // 

@@ -41,7 +41,33 @@ namespace Calculadora
             valor[3] = 50;
             valor[4] = 100;
 
-            cbbCategorias.Items.Add(valor[0]);
+            cbbCategorias.Items.Clear();
+
+            for (int i = 0; i < 5; i++)
+            {
+                cbbCategorias.Items.Add(valor[i]);
+            }
+        }
+
+        private void btnListarCategorias_Click(object sender, EventArgs e)
+        {
+            //criado um vetor de nomes
+            string[] nomes = new string[5];
+
+            nomes[0] = "Funcionários";
+            nomes[1] = "Caixa";
+            nomes[2] = "Recepção";
+            nomes[3] = "Balcão";
+            nomes[4] = "Produção";
+
+            ltbCategorias.Items.Clear();
+
+            for (int cont = 0; cont < 5; cont++)
+            {
+                ltbCategorias.Items.Add(nomes[cont]);
+            }
+
+
         }
     }
 }
