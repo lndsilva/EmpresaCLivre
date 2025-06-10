@@ -42,7 +42,6 @@ namespace Calculadora
             valor[4] = 100;
 
             cbbCategorias.Items.Add(valor[0]);
-
         }
     }
 }
